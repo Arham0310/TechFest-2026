@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore TechFest 2026 competitions, workshops and technology talks.">
+    
+    <title>TechFest 2026 | Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<header class="site-header">
+
+    <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="brand">
+            TechFest <span>2026</span>
+        </a>
+
+        <button class="menu-toggle" type="button"
+            aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="events.html" class="active" aria-current="page">Events</a>
+            <a href="register.html">Register</a>
+        </div>
+
+        <div class="nav-actions">
+
+            <span class="saved-indicator">
+                ★ <span id="saved-count">0</span>
+            </span>
+
+            <button class="theme-toggle" type="button">
+                ☾ Theme
+            </button>
+
+        </div>
+    </nav>
+</header>
+
+<main class="container page-main">
+
+    <section class="page-intro">
+        <p class="eyebrow">FIND YOUR NEXT CHALLENGE</p>
+        <h1>Explore Our Events</h1>
+
+        <p>
+            Choose a competition, learn a new skill
+            or hear from technology experts.
+        </p>
+
+    </section>
+
+    <section class="filters" aria-label="Search and filter events">
+
+        <div>
+            <label for="event-search">Search Events</label>
+            <input
+                type="search"
+                id="event-search"
+                placeholder="Search by event title..."
+            >
+        </div>
+
+        <div>
+
+            <label for="type-filter">Event Type</label>
+            <select id="type-filter">
+                <option value="all">All Types</option>
+                <option value="competition">Competitions</option>
+                <option value="workshop">Workshops</option>
+                <option value="talk">Talks</option>
+            </select>
+        </div>
+
+        <fieldset class="day-filter">
+            <legend>Select Day</legend>
+
+            <label>
+                <input type="radio" name="day-filter" value="all" checked>
+                All Days
+            </label>
+
+            <label>
+                <input type="radio" name="day-filter" value="1">
+                Day 1
+            </label>
+
+            <label>
+                <input type="radio" name="day-filter" value="2">
+                Day 2
+            </label>
+
+        </fieldset>
+    </section>
+
+    <p id="event-count" class="result-count"
+        aria-live="polite" aria-atomic="true">
+        Loading events...
+    </p>
+
+    <section
+        id="event-grid"
+        class="event-grid"
+        aria-label="TechFest events">
+    </section>
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+        <a href="index.html" class="brand">
+            TechFest <span>2026</span>
+        </a>
+
+        <p>University Computing Society · Lahore</p>
+        <p>© 2026 TechFest. All rights reserved.</p>
+
+    </div>
+
+</footer>
+</body>
+</html>
