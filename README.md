@@ -39,11 +39,11 @@ A responsive three-page event website developed using HTML5, CSS3 and Vanilla Ja
 
 ## GitHub Repository
 
-ADD YOUR REPOSITORY URL HERE
+https://github.com/Arham0310/TechFest-2026
 
 ## Live Website
 
-ADD YOUR GITHUB PAGES URL HERE
+https://arham0310.github.io/TechFest-2026/
 
 ## Screenshot
 
