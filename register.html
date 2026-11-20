@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Register for TechFest 2026 and select your event and participation preferences.">
+
+    <title>TechFest 2026 | Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="index.html" class="brand">
+            TechFest <span>2026</span>
+        </a>
+
+        <button class="menu-toggle" type="button"
+            aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html" class="active" aria-current="page">
+                Register
+            </a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <span class="saved-indicator">
+                ★ <span id="saved-count">0</span>
+            </span>
+
+            <button class="theme-toggle" type="button">
+                ☾ Theme
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="container page-main">
+    <section class="page-intro">
+        <p class="eyebrow">YOUR TECHFEST JOURNEY STARTS HERE</p>
+        <h1>Event Registration</h1>
+        <p>
+            Complete the registration form below
+            to participate in TechFest 2026.
+        </p>
+    </section>
+
+    <form id="registration-form"
+        class="registration-form"
+        novalidate>
+
+        <div class="form-field">
+            <label for="full-name">Full Name</label>
+            <input
+                type="text"
+                id="full-name"
+                name="fullName"
+                autocomplete="name"
+                required
+            >
+            <small class="field-error" id="full-name-error"></small>
+        </div>
+
+        <div class="form-field">
+            <label for="university-email">University Email</label>
+            <input
+                type="email"
+                id="university-email"
+                name="email"
+                placeholder="you@university.edu.pk"
+                autocomplete="email"
+                required
+            >
+            <small class="field-error" id="university-email-error"></small>
+        </div>
+
+        <div class="form-field">
+            <label for="registration-number">Registration Number</label>
+            <input
+                type="text"
+                id="registration-number"
+                name="registrationNumber"
+                placeholder="F2026123456"
+                required
+            >
+            <small class="field-error" id="registration-number-error"></small>
+        </div>
+
+        <div class="form-field">
+            <label for="event-choice">Select Event</label>
+            <select id="event-choice" name="event" required>
+
+                <option value="">Choose an event</option>
+
+            </select>
+            <small class="field-error" id="event-choice-error"></small>
+
+        </div>
+
+        <div class="form-field">
+            <label for="team-size">Team Size (1–4)</label>
+
+            <input
+                type="number"
+                id="team-size"
+                name="teamSize"
+                min="1"
+                max="4"
+                value="1"
+                required
+            >
+            <small class="field-error" id="team-size-error"></small>
+
+        </div>
+
+        <fieldset class="form-field radio-field">
+
+            <legend>Participation Type</legend>
+
+            <label>
+                <input
+                    type="radio"
+                    name="participation"
+                    value="individual"
+                    checked
+                >
+                Individual
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="participation"
+                    value="team"
+                >
+                Team
+            </label>
+            <small class="field-error" id="participation-error"></small>
+        </fieldset>
+
+        <div class="form-field">
+            <label for="tshirt-size">T-shirt Size</label>
+            <select id="tshirt-size" name="tshirtSize" required>
+
+                <option value="">Select Size</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+
+            </select>
+
+            <small class="field-error" id="tshirt-size-error"></small>
+        </div>
+
+        <div class="form-field terms-field">
+            <label class="checkbox-label">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+                I agree to the event terms and conditions.
+            </label>
+
+            <small class="field-error" id="terms-error"></small>
+        </div>
+
+        <button type="submit" class="button button-primary submit-button">
+            Submit Registration
+        </button>
+
+        <div
+            id="registration-summary"
+            class="summary-card"
+            role="status"
+            aria-live="polite"
+            hidden>
+        </div>
+
+    </form>
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-content">
+        <a href="index.html" class="brand">
+            TechFest <span>2026</span>
+        </a>
+
+        <p>University Computing Society · Lahore</p>
+        <p>© 2026 TechFest. All rights reserved.</p>
+    </div>
+
+</footer>
+</body>
+</html>
